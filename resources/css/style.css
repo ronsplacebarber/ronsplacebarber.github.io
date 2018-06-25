@@ -1,0 +1,214 @@
+html {
+  font-family: "Bitter", serif;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  background-color: black;
+}
+
+nav {
+  flex-direction: row;
+  display: flex;
+}
+
+nav li {
+  width: 10vw;
+  padding: 1vh;
+  background-color: gray;
+  color: white;
+  justify-content: center;
+  display: flex;
+  margin: 2vh;
+  font-size: 2.25vh;
+  border: 0.25vh solid darkgray;
+  border-radius: 5px;
+}
+
+header nav:first-child {
+  margin-left: 3vw;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav li:hover {
+  background-color: darkgray;
+}
+
+header h1 {
+  color: white;
+  font-size: 2.25vh;
+  padding: 1vh;
+  margin-right: 3vw;
+}
+
+.bar {
+  justify-content: space-between;
+  display: flex;
+}
+
+/* Landing */
+
+.landing-section {
+  width: 100%;
+  display: flex;
+  height: 92vh;
+  justify-content: center;
+  background-image: url("../../resources/images/barbershop.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.jumbotron {
+  display: flex;
+  margin-top: 25vh;
+  flex-direction: column;
+  background-color: darkgray;
+  max-width: 70vw;
+  max-height: 25vh;
+  justify-content: center;
+  align-items: center;
+  padding: 3vh;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.jumbotron h1 {
+  font-size: 8vh;
+}
+
+.jumbotron h2 {
+  font-size: 3vh;
+  margin-top: 1vh;
+}
+
+.jumbotron h3 {
+  margin-top: 3vh;
+  font-size: 2.5vh;
+}
+
+/* Information */
+
+.information-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.4;
+  text-align: c
+
+}
+
+.local {
+  display: flex;
+  flex-direction: row;
+  margin: 2vh;
+  padding: 2vh;
+  font-size: 3vh;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.part {
+  display: flex;
+  flex-direction: column;
+  margin: 2vh;
+  padding: 2vh;
+  max-width: 30vw;
+  border-left: 0.5vh solid black;
+}
+
+.info-title {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 5vh;
+  font-size: 5vh;
+}
+
+.terms {
+  max-width: 30vw;
+  text-align: justify;
+  font-size: 2vh;
+  margin-top: 2vh;
+}
+
+#terms {
+  justify-content: center;
+  color: black;
+  font-size: 3vh;
+  border-bottom: 0.25vh solid black;
+}
+
+/* Contact */
+
+.contact-title {
+  justify-content: center;
+  display: flex;
+  margin-top: 5vh;
+  font-size: 5vh;
+  width: 100%;
+  background-color: darkgray;
+  padding: 5vh;
+  margin-top: 5vh;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: darkgray;
+  width: 100%;
+}
+
+.num {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3vh;
+}
+
+.num h1 {
+  font-size: 3vh;
+  margin-bottom: 2vh;
+}
+
+.address {
+  margin: 3vh;
+}
+
+.contact div {
+  width: 35vw;
+}
+
+.num a {
+  background-color: black;
+  padding: 3vh;
+  font-size: 2vh;
+  width: 10vw;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: white;
+  text-decoration: none;
+}
+
+.num a:hover {
+  background-color: gray;
+}
+
+.num p {
+  margin-top: 3vh;
+  font-size: 2vh;
+}
