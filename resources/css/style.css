@@ -55,6 +55,68 @@ header h1 {
   display: flex;
 }
 
+#mobilenav {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .bar:last-child {
+    display: none;
+  }
+
+  nav li {
+    width: 20vw;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #nav {
+    display: none;
+  }
+
+  #mobilenav {
+    display: flex;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .bar:last-child {
+    display: none;
+  }
+
+  nav li {
+    width: 20vw;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.terms {
+    max-width: 80vw;
+    text-align: left;
+  }
+  div.jumbotron {
+    max-height: 50vh;
+    max-width: 80vw;
+  }
+
+}
+
 /* Landing */
 
 .landing-section {
@@ -94,6 +156,13 @@ header h1 {
 .jumbotron h3 {
   margin-top: 3vh;
   font-size: 2.5vh;
+}
+
+@media only screen and (max-width: 480px) {
+  .jumbotron {
+    max-height: 45vh;
+    max-width: 80vw;
+  }
 }
 
 /* Information */
@@ -149,6 +218,22 @@ header h1 {
   border-bottom: 0.25vh solid black;
 }
 
+@media only screen and (max-width: 480px) {
+  .local {
+    flex-direction: column;
+    max-width: 70vw;
+  }
+
+  .part {
+    max-width: 70vw;
+  }
+
+  div.terms {
+    max-width: 80vw;
+    text-align: left;
+
+  }
+}
 /* Contact */
 
 .contact-title {
@@ -172,44 +257,55 @@ header h1 {
   padding-bottom: 10vh;
 }
 
-.num {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 3vh;
-}
 
-.num h1 {
+.mod h1 {
   font-size: 3vh;
   margin-bottom: 2vh;
 }
 
-.address {
-  margin: 3vh;
+.mod {
+  width: 45vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2vh;
+  text-align: center;
+  align-self: center;
 }
 
-.contact div {
-  width: 35vw;
+.mod:last-child {
+  align-items: center;
 }
 
-.num a {
+.mod:first-child {
+  flex-direction: row;
+}
+.mods {
+  display: flex;
+  flex-direction: row;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.mod a {
   background-color: black;
   padding: 3vh;
   font-size: 2vh;
-  width: 10vw;
+  width: 20vw;
   justify-content: center;
-  align-items: center;
   display: flex;
   color: white;
   text-decoration: none;
 }
 
-.num a:hover {
+.mod a:hover {
   background-color: gray;
 }
 
-.num p {
+.mod p {
   margin-top: 3vh;
   font-size: 2vh;
 }
@@ -218,4 +314,100 @@ header h1 {
 #contacus {
   display: block;
   height: 8vh;
+}
+
+@media only screen and (max-width: 480px) {
+  .mods {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact div {
+    width: 70vw;
+    justify-content: center;
+    display: flex;
+  }
+
+  .mod {
+    max-width: 70vw;
+  }
+
+  .mods {
+    flex-direction: column;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact div {
+    max-width: 70vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .mods {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .contact {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact div {
+    max-width: 80vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  div.terms {
+    max-width: 80vw;
+    text-align: left;
+  }
+
+  .mods {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+
+}
+
+/* Footer */
+
+footer {
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 1vh auto;
+}
+
+@media only screen and (max-width: 1024px) {
+  footer {
+    flex-direction: column;
+    height: 10vh;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    height: 12vh;
+  }
 }
